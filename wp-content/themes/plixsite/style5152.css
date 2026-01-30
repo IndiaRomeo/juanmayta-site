@@ -1,0 +1,525 @@
+/*
+Theme Name:   Plixsite
+Theme URI: https://plixsite.com
+Description:  Plixsite - Hosting Wordpress Theme
+Author:       aleks rc
+Author URL:   https://plixsite.com
+Template:     phlox-pro
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  phlox-pro
+Tags: domains, host, hosting, hosting templates, landing page, layout, layout switcher, modern, one page, template, web hosting templates, whmcs, whmcs templates, whmcsdes
+Text
+*/
+
+
+
+.page-content, .aux-wrapper {
+    overflow: hidden;
+}
+
+body {
+    background-color: #fcfcf3;
+}
+
+
+::selection {
+    background: #4CAF50 !important;
+    color: #ffffff !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #393939;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+      background: #8a8a8a;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+.bg-fil {
+backdrop-filter: blur(10px);
+}
+
+.cleverwa-description p span {
+    color: rgba(255, 255, 255, 1) !important;
+    font-size: 12px !important;
+}
+
+
+
+
+
+
+
+
+/* HEADER SCROLL */
+
+#Top_bar {
+        top: 0;
+        z-index: 19;
+        -webkit-transition: top .3s 
+ease-out;
+        transition: top .3s 
+ease-out;
+}
+
+
+
+
+/* CURSOR ANIMADO */
+
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  opacity: 0;
+  z-index: 10000;
+  user-select: none;
+	pointer-events:none;
+}
+
+
+
+
+/* WP CONTACT FORM 7 */
+
+
+
+.cfkit {
+    margin: 0px !important;
+}
+
+.cfkit .col-md-12 {
+    padding: 0 5px !important;
+}
+.wpcf7 .cfkit .wpcf7-form-control-wrap {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+.wpcf7 textarea {
+    padding: 15px !important;
+}
+
+
+
+.wpcf7 form.sent .wpcf7-response-output, .wpcf7-spinner  {
+    display: none !important;
+}
+
+
+
+@media screen and (min-width: 960px) {
+    
+ .cfkit .col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+}  
+.cfkit .col-md-3 {
+    width: 33.333% !important;
+    flex: 0 0 33.333% !important;
+} 
+
+}
+
+
+
+
+
+
+
+
+/* BARRA SCROL SIMPREMARQUE */
+
+
+
+.msd-content {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    margin-right: 11vw 211.2px;
+}
+
+
+   
+   
+@media screen and (min-width: 992px) {
+    
+.msd-content img {
+    padding: 5px 30px;
+    width: 90px;
+ }
+    
+ .simplemarque {
+    display: inline-block;
+    animation-duration: 80.2245s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-name: simplemarquee-15;
+    animation-timeline: auto;
+    animation-range: normal;
+}  
+
+@keyframes simplemarquee-15{
+0% {
+    transform: translate(0, 0);
+}
+
+100% {
+    transform: translate(-220%, 0);
+}
+}
+
+}    
+
+
+
+   
+   
+@media screen and (max-width: 991px) {
+
+.msd-content img {
+    padding: 5px 30px;
+    width: 90px;
+ }
+    
+ .simplemarque {
+    display: inline-block;
+    animation-duration: 40.2245s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-name: simplemarquee-15;
+    animation-timeline: auto;
+    animation-range: normal;
+}  
+
+@keyframes simplemarquee-15{
+0% {
+    transform: translate(0, 0);
+}
+
+100% {
+    transform: translate(-620%, 0);
+}
+}
+
+}    
+
+
+
+
+
+
+
+/* MENU HAMBURGUESA */
+
+.hamburger {
+cursor: pointer; 
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(38 55 63);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .close {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 70px;
+    font-weight: 300;
+    color: #ecc26d;
+    cursor: pointer;
+    z-index: 9;
+}
+
+
+.modal-content {
+  height: 100%;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    
+    
+    
+    .category .hentry {
+        width: 31.1% !important;
+        display: inline-block !important;
+        margin: 10px;
+    } 
+  
+  
+ 
+    
+    
+    
+.single-post .aux-wrapper, .category .aux-primary {
+     margin-top: 50px;
+    
+}
+    
+.joinchat__button {
+    height: 80px !important;
+    min-width: 80px !important;
+}
+    
+}
+
+
+
+
+.joinchat__button {
+  border-radius: 100% !important;
+  animation: pisca 1.5s infinite;
+  bottom: 30px !important;
+}
+
+@keyframes pisca {
+    70% {
+        box-shadow: 0 0 0 15px #25d3669e;
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 #0c652dc7;
+    }
+}
+
+
+ 
+
+
+
+
+
+/* FONDO DEGRADADO ANIMADO */
+.animated-gradient-bg {
+    background: linear-gradient(270deg, #121c21, #203037, #203037, #121c21);
+    background-size: 600% 600%;
+    animation: gradientMove 12s ease-in-out infinite;
+}
+
+/* ANIMACIÓN */
+@keyframes gradientMove {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+
+ 
+ 
+ 
+.bg-shadow-two::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, #091216 0%, #1a272d 50%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.btn-hover-up {
+ overflow: hidden;
+}
+
+
+.btn-hover-up:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 18px;
+}
+
+a:hover .boxoed img {
+    opacity: 1;
+    transform: scale(1.1);
+    position: relative;
+    transition: 0.4s;
+}
+
+
+
+
+
+
+
+
+.cfkit input:focus, .cfkit textarea:focus {
+  border-color: #ecc36e !important; /* Cambia este color al que prefieras */
+  box-shadow: 0 0 8px #ecc36e !important; /* Efecto de brillo opcional */
+  outline: none !important; /* Elimina el contorno azul por defecto */
+  transition: all 0.3s ease !important;
+    
+}    
+
+.entry-content h2, .comment-body h2 {
+    font-size: 1.6em;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+    
+    .aux-resp .aux-sidebar {
+        display: none;
+    }    
+    
+.aux-content-top-margin .aux-primary {
+    padding-top: 3.775em !important;
+}    
+    .category .aux-next-prev-posts, .single-post .hentry .entry-main, .category .hentry .entry-main {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}  
+    
+
+.aux-resp .right-sidebar > .aux-wrapper > .aux-fold, .category .aux-fold {
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+    }
+
+.hentry .entry-media {
+    margin-bottom: 1.5625em !important;
+}
+
+}
+.category .hentry .entry-media
+ {
+    margin-bottom: 1.1625em;
+}
+
+
+.aux-sidebar .sidebar-inner {
+    padding: 3.5em 0em !important;
+}
+figure {
+    margin: 0;
+} 
+
+.nocomments,  .category .hentry .entry-content  {
+    display: none;
+}
+
+
+.category .hentry .entry-title {
+    position: relative;
+    margin: 0;
+    color: #1f2f36;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.1em;
+    word-break: break-word;
+    font-style: normal;
+    font-family: "Raleway", arial, sans-serif;
+}
+
+.category .hentry .entry-main {
+    margin-bottom: 3.375em;
+}
+
+.aux-archive .type-post .entry-title a {
+    color: #24353d;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.category .aux-fold {
+    width: auto;
+    max-width: 1400px !important;
+}
+
+.aux-archive .type-post .entry-info a {
+    color: #24353d !important;
+}
+
+.category a:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+    position: relative;
+    transition: 0.4s;
+}
+
+
+.single-post .entry-media a {
+    pointer-events: none;
+    cursor: default;
+}
+
+.single-post .hentry .entry-info a {
+    color: rgb(233 195 83) !important;
+}
+
+.wp-block-separator {
+    border: none;
+    border-top: 2px solid;
+    color: transparent !important;
+}
+
+.btn-cursor {
+    cursor: pointer;
+}
+
+
+
+
+
